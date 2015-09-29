@@ -1,0 +1,14 @@
+PODS:
+  - JJMaterialTextField (0.1.0)
+
+DEPENDENCIES:
+  - JJMaterialTextField (from `../`)
+
+EXTERNAL SOURCES:
+  JJMaterialTextField:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JJMaterialTextField: 48cba9a2549fe6f009b820b7277824f49459fcde
+
+COCOAPODS: 0.38.2

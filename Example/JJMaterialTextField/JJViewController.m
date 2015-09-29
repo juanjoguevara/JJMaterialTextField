@@ -17,6 +17,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    JJMaterialTextfield *materialTextField =[[JJMaterialTextfield alloc] initWithFrame:CGRectMake(20, 60, 300, 32)];
+    materialTextField.lineColor=[UIColor lightGrayColor];
+    materialTextField.errorColor=[UIColor redColor];
+    [materialTextField clearButtonTintColor:[UIColor greenColor]];
+    [materialTextField enableMaterialPlaceHolder:YES];
+    materialTextField.placeholder=@"TextField Example";
+    
+    [self.view addSubview:materialTextField];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

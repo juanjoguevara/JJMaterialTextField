@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BB21E30DD726A6AC558B56132EB5867 /* Pods-JJMaterialTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AEC46B97F6475B858731B6E25F35BEF /* Pods-JJMaterialTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		162008DEF642033EC7BA8B027271793A /* JJMaterialTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0907FD0551AD5C37010C558A8C31919 /* JJMaterialTextField-dummy.m */; };
+		23AF8EE3C8631F801B2EE446EEBB384D /* JJMaterialTextfield.h in Headers */ = {isa = PBXBuildFile; fileRef = 874611BB6357E6A983B8A75252CD04A1 /* JJMaterialTextfield.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A51CE4174D5B7F7B92CEAA405700CB /* Pods-JJMaterialTextField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E63FD69F8F78F5624E800975217089F1 /* Pods-JJMaterialTextField_Tests-dummy.m */; };
+		536D8F15FC996B9E55C0F76C974011A3 /* JJMaterialTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8D1B09C4FB3AFD0AA0CD904F28708E /* JJMaterialTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BB6A784236059DC76F730892EDCEC65 /* JJMaterialTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = C71835092A006FFEE63492D0B1B53E2F /* JJMaterialTextfield.m */; };
+		61E6923D2653E5C4BA4563DE454D2E17 /* JJMaterialTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D19524B97FFC2AAFCC6FE108A253397 /* JJMaterialTextField.bundle */; };
+		63C959249BE3DB6D428022AE1F8F10BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591AE4A91AE950F60B0C311ED1485137 /* Foundation.framework */; };
+		6E37EC4A710837195B1BDBA36C5F8C31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591AE4A91AE950F60B0C311ED1485137 /* Foundation.framework */; };
+		81AE9C05491EAD6E8784D239B4374C5B /* Pods-JJMaterialTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F5562774857923E6136541A5EC4EE5 /* Pods-JJMaterialTextField_Example-dummy.m */; };
+		9E57E797C414C1F3B2F0F069B1AEAFE4 /* Pods-JJMaterialTextField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B25B36202FEFEE452A75BAA9E0604F76 /* Pods-JJMaterialTextField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C04A2D4C9B457B1B05FEB51E1EA1852D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591AE4A91AE950F60B0C311ED1485137 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E96E8C0BD55D19775CF29B5E49B96B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55A5604A0FD939DC9267B9ABF66286B1;
+			remoteInfo = "JJMaterialTextField-JJMaterialTextField";
+		};
+		6AF488EA414F608346F101D24D7CF965 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F2CE70F418B7C7415551E78B9E545C0;
+			remoteInfo = JJMaterialTextField;
+		};
+		94A8D3ED2A9CB632F0EAA688A08AB14F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F2CE70F418B7C7415551E78B9E545C0;
+			remoteInfo = JJMaterialTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		046F3FFA619834448B86C999D8753AE3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		092F23A63C02161AC6EE2B9D152F1FDB /* Pods-JJMaterialTextField_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JJMaterialTextField_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		0B35126B953B9A99FFDAAC6EEBD1824C /* Pods-JJMaterialTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JJMaterialTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0FBC791DB4B61A51BC333AC4D3CCFB92 /* Pods-JJMaterialTextField_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JJMaterialTextField_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1AEC46B97F6475B858731B6E25F35BEF /* Pods-JJMaterialTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JJMaterialTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
+		21AB2DAF772D7BEAF08FD3C52748A2CD /* Pods-JJMaterialTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JJMaterialTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2BC285DE3FA4412C45A965D6855C5E76 /* Pods-JJMaterialTextField_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JJMaterialTextField_Example-resources.sh"; sourceTree = "<group>"; };
+		4F9FBDD30F0048C54D8B8E0A59BBE870 /* Pods-JJMaterialTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JJMaterialTextField_Example.modulemap"; sourceTree = "<group>"; };
+		50E21DA3B27D17467CF0928479C77D6C /* Pods-JJMaterialTextField_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JJMaterialTextField_Example-frameworks.sh"; sourceTree = "<group>"; };
+		591AE4A91AE950F60B0C311ED1485137 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67FB676E470A4333EFA59B418B7742CF /* JJMaterialTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JJMaterialTextField.xcconfig; sourceTree = "<group>"; };
+		6D19524B97FFC2AAFCC6FE108A253397 /* JJMaterialTextField.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JJMaterialTextField.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		80BD433EC2F25205C7BD8D61241847BE /* Pods-JJMaterialTextField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JJMaterialTextField_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		85AD0CEBBD46A6AE91F81D1487B3AD14 /* Pods_JJMaterialTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJMaterialTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		874611BB6357E6A983B8A75252CD04A1 /* JJMaterialTextfield.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JJMaterialTextfield.h; sourceTree = "<group>"; };
+		8F35DEB09886D015FD7C39416C21AEE8 /* JJMaterialTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JJMaterialTextField-prefix.pch"; sourceTree = "<group>"; };
+		8F8D1B09C4FB3AFD0AA0CD904F28708E /* JJMaterialTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JJMaterialTextField-umbrella.h"; sourceTree = "<group>"; };
+		96615922BE432B72F683BA490CE2DEE3 /* Pods-JJMaterialTextField_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JJMaterialTextField_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		97F5562774857923E6136541A5EC4EE5 /* Pods-JJMaterialTextField_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JJMaterialTextField_Example-dummy.m"; sourceTree = "<group>"; };
+		9A833CC55506052AA25251011B83A79D /* JJMaterialTextField-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "JJMaterialTextField-Private.xcconfig"; sourceTree = "<group>"; };
+		9B6D3C6E5D9D7168832A2916636B1D59 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0907FD0551AD5C37010C558A8C31919 /* JJMaterialTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JJMaterialTextField-dummy.m"; sourceTree = "<group>"; };
+		A20D8D9057087A91921E6A6357881277 /* Pods-JJMaterialTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JJMaterialTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B25B36202FEFEE452A75BAA9E0604F76 /* Pods-JJMaterialTextField_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JJMaterialTextField_Example-umbrella.h"; sourceTree = "<group>"; };
+		B4047A092ACF32523E0E1904A79F9C10 /* Pods-JJMaterialTextField_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JJMaterialTextField_Tests-resources.sh"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C16801B7574E457B51161234B891E4CA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C71835092A006FFEE63492D0B1B53E2F /* JJMaterialTextfield.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JJMaterialTextfield.m; sourceTree = "<group>"; };
+		CE498F73EBBECB62C90BF6EC4D1520E4 /* Pods-JJMaterialTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JJMaterialTextField_Tests.modulemap"; sourceTree = "<group>"; };
+		CF1F2AB81E9B5E3DCDA063CCF4E7103B /* Pods-JJMaterialTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JJMaterialTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DEF3D3E35FC47CDB5CB42060D85A56A6 /* Pods_JJMaterialTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJMaterialTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5B899DDCAB705B1475F4D9B0AE5528E /* JJMaterialTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JJMaterialTextField.modulemap; sourceTree = "<group>"; };
+		E63FD69F8F78F5624E800975217089F1 /* Pods-JJMaterialTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JJMaterialTextField_Tests-dummy.m"; sourceTree = "<group>"; };
+		F61C301E2D477BA9F07008B29DF98D97 /* Pods-JJMaterialTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JJMaterialTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F9439A01A003F26DF2645786C0377A0E /* JJMaterialTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JJMaterialTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C54C3D0175DB4648469F6622D96193A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E37EC4A710837195B1BDBA36C5F8C31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2F6B88967AA53566C1D61817ACCA6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA25F269950CAAEAD19B18BB4CE64F0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C04A2D4C9B457B1B05FEB51E1EA1852D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB0707AE87AAD338A9DE7ACCE457A739 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C959249BE3DB6D428022AE1F8F10BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B560E6AED2B0CA75E53B72A3172F481 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D3C98119CC0528DC3710892E207CA88E /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		4537EA0EE55FE94E1F7CEBD100C335F2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C16801B7574E457B51161234B891E4CA /* Info.plist */,
+				E5B899DDCAB705B1475F4D9B0AE5528E /* JJMaterialTextField.modulemap */,
+				67FB676E470A4333EFA59B418B7742CF /* JJMaterialTextField.xcconfig */,
+				9A833CC55506052AA25251011B83A79D /* JJMaterialTextField-Private.xcconfig */,
+				A0907FD0551AD5C37010C558A8C31919 /* JJMaterialTextField-dummy.m */,
+				8F35DEB09886D015FD7C39416C21AEE8 /* JJMaterialTextField-prefix.pch */,
+				8F8D1B09C4FB3AFD0AA0CD904F28708E /* JJMaterialTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JJMaterialTextField";
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				591AE4A91AE950F60B0C311ED1485137 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5918BD89DD6D0EE77143236DCFF4D9EF /* Pods-JJMaterialTextField_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D3C6E5D9D7168832A2916636B1D59 /* Info.plist */,
+				CE498F73EBBECB62C90BF6EC4D1520E4 /* Pods-JJMaterialTextField_Tests.modulemap */,
+				A20D8D9057087A91921E6A6357881277 /* Pods-JJMaterialTextField_Tests-acknowledgements.markdown */,
+				CF1F2AB81E9B5E3DCDA063CCF4E7103B /* Pods-JJMaterialTextField_Tests-acknowledgements.plist */,
+				E63FD69F8F78F5624E800975217089F1 /* Pods-JJMaterialTextField_Tests-dummy.m */,
+				092F23A63C02161AC6EE2B9D152F1FDB /* Pods-JJMaterialTextField_Tests-frameworks.sh */,
+				B4047A092ACF32523E0E1904A79F9C10 /* Pods-JJMaterialTextField_Tests-resources.sh */,
+				1AEC46B97F6475B858731B6E25F35BEF /* Pods-JJMaterialTextField_Tests-umbrella.h */,
+				21AB2DAF772D7BEAF08FD3C52748A2CD /* Pods-JJMaterialTextField_Tests.debug.xcconfig */,
+				F61C301E2D477BA9F07008B29DF98D97 /* Pods-JJMaterialTextField_Tests.release.xcconfig */,
+			);
+			name = "Pods-JJMaterialTextField_Tests";
+			path = "Target Support Files/Pods-JJMaterialTextField_Tests";
+			sourceTree = "<group>";
+		};
+		734A58C3199BC4FD5E95009937CE5A18 /* Pods-JJMaterialTextField_Example */ = {
+			isa = PBXGroup;
+			children = (
+				046F3FFA619834448B86C999D8753AE3 /* Info.plist */,
+				4F9FBDD30F0048C54D8B8E0A59BBE870 /* Pods-JJMaterialTextField_Example.modulemap */,
+				0FBC791DB4B61A51BC333AC4D3CCFB92 /* Pods-JJMaterialTextField_Example-acknowledgements.markdown */,
+				96615922BE432B72F683BA490CE2DEE3 /* Pods-JJMaterialTextField_Example-acknowledgements.plist */,
+				97F5562774857923E6136541A5EC4EE5 /* Pods-JJMaterialTextField_Example-dummy.m */,
+				50E21DA3B27D17467CF0928479C77D6C /* Pods-JJMaterialTextField_Example-frameworks.sh */,
+				2BC285DE3FA4412C45A965D6855C5E76 /* Pods-JJMaterialTextField_Example-resources.sh */,
+				B25B36202FEFEE452A75BAA9E0604F76 /* Pods-JJMaterialTextField_Example-umbrella.h */,
+				80BD433EC2F25205C7BD8D61241847BE /* Pods-JJMaterialTextField_Example.debug.xcconfig */,
+				0B35126B953B9A99FFDAAC6EEBD1824C /* Pods-JJMaterialTextField_Example.release.xcconfig */,
+			);
+			name = "Pods-JJMaterialTextField_Example";
+			path = "Target Support Files/Pods-JJMaterialTextField_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				83826FE691C3D8ED8ABAE37D55A0A771 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				9F35B1424B65FCF0A07778927AD96095 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		83826FE691C3D8ED8ABAE37D55A0A771 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB45853AA31B5371C509C3F64744243F /* JJMaterialTextField */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9F35B1424B65FCF0A07778927AD96095 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				734A58C3199BC4FD5E95009937CE5A18 /* Pods-JJMaterialTextField_Example */,
+				5918BD89DD6D0EE77143236DCFF4D9EF /* Pods-JJMaterialTextField_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BB45853AA31B5371C509C3F64744243F /* JJMaterialTextField */ = {
+			isa = PBXGroup;
+			children = (
+				0B560E6AED2B0CA75E53B72A3172F481 /* Pod */,
+				4537EA0EE55FE94E1F7CEBD100C335F2 /* Support Files */,
+			);
+			name = JJMaterialTextField;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D19524B97FFC2AAFCC6FE108A253397 /* JJMaterialTextField.bundle */,
+				F9439A01A003F26DF2645786C0377A0E /* JJMaterialTextField.framework */,
+				DEF3D3E35FC47CDB5CB42060D85A56A6 /* Pods_JJMaterialTextField_Example.framework */,
+				85AD0CEBBD46A6AE91F81D1487B3AD14 /* Pods_JJMaterialTextField_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3C98119CC0528DC3710892E207CA88E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				874611BB6357E6A983B8A75252CD04A1 /* JJMaterialTextfield.h */,
+				C71835092A006FFEE63492D0B1B53E2F /* JJMaterialTextfield.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		60CD61205BF132CF4EF44D0509B26E4C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB21E30DD726A6AC558B56132EB5867 /* Pods-JJMaterialTextField_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8842C7A8419D3B2643B47E3A4EB65A6C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E57E797C414C1F3B2F0F069B1AEAFE4 /* Pods-JJMaterialTextField_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB375F3AC98F99461BE075D6F9A2186D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536D8F15FC996B9E55C0F76C974011A3 /* JJMaterialTextField-umbrella.h in Headers */,
+				23AF8EE3C8631F801B2EE446EEBB384D /* JJMaterialTextfield.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2F2CE70F418B7C7415551E78B9E545C0 /* JJMaterialTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF504C6F455A0BDDF7472AE6C1CD4442 /* Build configuration list for PBXNativeTarget "JJMaterialTextField" */;
+			buildPhases = (
+				3DD6003347663256F55110DE4711C6FB /* Sources */,
+				1C54C3D0175DB4648469F6622D96193A /* Frameworks */,
+				AFFF3F801DB2D347EA93236DEB8E45CF /* Resources */,
+				AB375F3AC98F99461BE075D6F9A2186D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6C1402A29A60CCE0BD2E05866FF8ADE /* PBXTargetDependency */,
+			);
+			name = JJMaterialTextField;
+			productName = JJMaterialTextField;
+			productReference = F9439A01A003F26DF2645786C0377A0E /* JJMaterialTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		55A5604A0FD939DC9267B9ABF66286B1 /* JJMaterialTextField-JJMaterialTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A08F5304862432CFB3AB9CB6C19A07 /* Build configuration list for PBXNativeTarget "JJMaterialTextField-JJMaterialTextField" */;
+			buildPhases = (
+				EA3C2B2041357DF4695934F6DF4F02C8 /* Sources */,
+				2C2F6B88967AA53566C1D61817ACCA6B /* Frameworks */,
+				4D15C33151691B69117D3D7EB06093EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JJMaterialTextField-JJMaterialTextField";
+			productName = "JJMaterialTextField-JJMaterialTextField";
+			productReference = 6D19524B97FFC2AAFCC6FE108A253397 /* JJMaterialTextField.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		CEE266A1D48DB2AE8E6647DAAD093B88 /* Pods-JJMaterialTextField_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECD51F1EEE635F2C1D2CBB21D6B98092 /* Build configuration list for PBXNativeTarget "Pods-JJMaterialTextField_Example" */;
+			buildPhases = (
+				D36993C480EA377260FEC353678F5B02 /* Sources */,
+				CA25F269950CAAEAD19B18BB4CE64F0C /* Frameworks */,
+				8842C7A8419D3B2643B47E3A4EB65A6C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8ED27315541B61F6452F2358BDF25661 /* PBXTargetDependency */,
+			);
+			name = "Pods-JJMaterialTextField_Example";
+			productName = "Pods-JJMaterialTextField_Example";
+			productReference = DEF3D3E35FC47CDB5CB42060D85A56A6 /* Pods_JJMaterialTextField_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E14656656022517844D0B7043B614E03 /* Pods-JJMaterialTextField_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2CCA9E7190E7E26ABAC6B951380A7F4 /* Build configuration list for PBXNativeTarget "Pods-JJMaterialTextField_Tests" */;
+			buildPhases = (
+				D7AED895F0CB61A1833DAC7AAE30A5FE /* Sources */,
+				EB0707AE87AAD338A9DE7ACCE457A739 /* Frameworks */,
+				60CD61205BF132CF4EF44D0509B26E4C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AF542A8CC1D30EFD9A42CCE0250504A /* PBXTargetDependency */,
+			);
+			name = "Pods-JJMaterialTextField_Tests";
+			productName = "Pods-JJMaterialTextField_Tests";
+			productReference = 85AD0CEBBD46A6AE91F81D1487B3AD14 /* Pods_JJMaterialTextField_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F2CE70F418B7C7415551E78B9E545C0 /* JJMaterialTextField */,
+				55A5604A0FD939DC9267B9ABF66286B1 /* JJMaterialTextField-JJMaterialTextField */,
+				CEE266A1D48DB2AE8E6647DAAD093B88 /* Pods-JJMaterialTextField_Example */,
+				E14656656022517844D0B7043B614E03 /* Pods-JJMaterialTextField_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D15C33151691B69117D3D7EB06093EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFF3F801DB2D347EA93236DEB8E45CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E6923D2653E5C4BA4563DE454D2E17 /* JJMaterialTextField.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DD6003347663256F55110DE4711C6FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162008DEF642033EC7BA8B027271793A /* JJMaterialTextField-dummy.m in Sources */,
+				5BB6A784236059DC76F730892EDCEC65 /* JJMaterialTextfield.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D36993C480EA377260FEC353678F5B02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AE9C05491EAD6E8784D239B4374C5B /* Pods-JJMaterialTextField_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7AED895F0CB61A1833DAC7AAE30A5FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A51CE4174D5B7F7B92CEAA405700CB /* Pods-JJMaterialTextField_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA3C2B2041357DF4695934F6DF4F02C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6AF542A8CC1D30EFD9A42CCE0250504A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JJMaterialTextField;
+			target = 2F2CE70F418B7C7415551E78B9E545C0 /* JJMaterialTextField */;
+			targetProxy = 94A8D3ED2A9CB632F0EAA688A08AB14F /* PBXContainerItemProxy */;
+		};
+		8ED27315541B61F6452F2358BDF25661 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JJMaterialTextField;
+			target = 2F2CE70F418B7C7415551E78B9E545C0 /* JJMaterialTextField */;
+			targetProxy = 6AF488EA414F608346F101D24D7CF965 /* PBXContainerItemProxy */;
+		};
+		F6C1402A29A60CCE0BD2E05866FF8ADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "JJMaterialTextField-JJMaterialTextField";
+			target = 55A5604A0FD939DC9267B9ABF66286B1 /* JJMaterialTextField-JJMaterialTextField */;
+			targetProxy = 3E96E8C0BD55D19775CF29B5E49B96B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		18D8B25AAB4039183C368D2584B1697D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A833CC55506052AA25251011B83A79D /* JJMaterialTextField-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JJMaterialTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		59DF5FE73E0437FA0B0092AB9C1DA3B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B35126B953B9A99FFDAAC6EEBD1824C /* Pods-JJMaterialTextField_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JJMaterialTextField_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JJMaterialTextField_Example/Pods-JJMaterialTextField_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JJMaterialTextField_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		96144FB45671DC670E2D7F19F6E2A4E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A833CC55506052AA25251011B83A79D /* JJMaterialTextField-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JJMaterialTextField/JJMaterialTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JJMaterialTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JJMaterialTextField/JJMaterialTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JJMaterialTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		98D836432A94B319EB6E0F4FB6F1DA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80BD433EC2F25205C7BD8D61241847BE /* Pods-JJMaterialTextField_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JJMaterialTextField_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JJMaterialTextField_Example/Pods-JJMaterialTextField_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JJMaterialTextField_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A985358C74617549902F3A7FB00EC4C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A833CC55506052AA25251011B83A79D /* JJMaterialTextField-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JJMaterialTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		DEF9090BA5C7A23FD8E0251F33CDB40D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F61C301E2D477BA9F07008B29DF98D97 /* Pods-JJMaterialTextField_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JJMaterialTextField_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JJMaterialTextField_Tests/Pods-JJMaterialTextField_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JJMaterialTextField_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8D6305E273509500122E347FED343EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21AB2DAF772D7BEAF08FD3C52748A2CD /* Pods-JJMaterialTextField_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JJMaterialTextField_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JJMaterialTextField_Tests/Pods-JJMaterialTextField_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JJMaterialTextField_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1B88DBC7CB6E23065E939C8F469FAA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A833CC55506052AA25251011B83A79D /* JJMaterialTextField-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JJMaterialTextField/JJMaterialTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JJMaterialTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JJMaterialTextField/JJMaterialTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JJMaterialTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF504C6F455A0BDDF7472AE6C1CD4442 /* Build configuration list for PBXNativeTarget "JJMaterialTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96144FB45671DC670E2D7F19F6E2A4E0 /* Debug */,
+				F1B88DBC7CB6E23065E939C8F469FAA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2CCA9E7190E7E26ABAC6B951380A7F4 /* Build configuration list for PBXNativeTarget "Pods-JJMaterialTextField_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8D6305E273509500122E347FED343EF /* Debug */,
+				DEF9090BA5C7A23FD8E0251F33CDB40D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECD51F1EEE635F2C1D2CBB21D6B98092 /* Build configuration list for PBXNativeTarget "Pods-JJMaterialTextField_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D836432A94B319EB6E0F4FB6F1DA03 /* Debug */,
+				59DF5FE73E0437FA0B0092AB9C1DA3B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A08F5304862432CFB3AB9CB6C19A07 /* Build configuration list for PBXNativeTarget "JJMaterialTextField-JJMaterialTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A985358C74617549902F3A7FB00EC4C1 /* Debug */,
+				18D8B25AAB4039183C368D2584B1697D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

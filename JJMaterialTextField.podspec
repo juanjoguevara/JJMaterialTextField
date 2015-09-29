@@ -9,22 +9,21 @@
 Pod::Spec.new do |s|
   s.name             = "JJMaterialTextField"
   s.version          = "0.1.0"
-  s.summary          = "A short description of JJMaterialTextField."
+  s.summary          = "A subclass of UITextfield based on Material Design"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
+  s.description      = "This CocoaPod provides a UITextfield with Material Design appearance"
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/JJMaterialTextField"
+  s.homepage         = "https://github.com/juanjoguevara/JJMaterialTextField"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Juanjo Guevara" => "juanjoguevara@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/JJMaterialTextField.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/juanjoguevara/JJMaterialTextField.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/juanjoguevara>'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
