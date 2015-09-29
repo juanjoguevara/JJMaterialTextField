@@ -17,11 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    JJMaterialTextfield *materialTextField =[[JJMaterialTextfield alloc] initWithFrame:CGRectMake(20, 60, 300, 32)];
-    materialTextField.lineColor=[UIColor lightGrayColor];
-    materialTextField.errorColor=[UIColor redColor];
-    [materialTextField clearButtonTintColor:[UIColor greenColor]];
+    JJMaterialTextfield *materialTextField =[[JJMaterialTextfield alloc] initWithFrame:CGRectMake(20, 60, 320, 34)];
+    materialTextField.textColor=[UIColor grayColor];
+    materialTextField.lineColor=[UIColor darkGrayColor];
     [materialTextField enableMaterialPlaceHolder:YES];
+    [materialTextField clearButtonTintColor:[UIColor darkGrayColor]];
+    materialTextField.errorColor=[UIColor redColor];
+  
+;
     materialTextField.placeholder=@"TextField Example";
     
     [self.view addSubview:materialTextField];

@@ -23,7 +23,7 @@
 #define DEFAULT_ALPHA_LINE 0.6
 
 -(void)commonInit{
-    lineColor=[UIColor whiteColor];
+    lineColor=[UIColor lightGrayColor];
     line=[[UIView alloc] init];
     line.backgroundColor=[lineColor colorWithAlphaComponent:DEFAULT_ALPHA_LINE];
     self.clearButtonMode = UITextFieldViewModeWhileEditing;
