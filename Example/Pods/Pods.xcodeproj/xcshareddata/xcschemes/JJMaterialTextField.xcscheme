@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ED9AF8E71D2C1689085B4742"
+               BlueprintIdentifier = "164D2108E7E258B77D330012"
                BuildableName = "JJMaterialTextField.framework"
                BlueprintName = "JJMaterialTextField"
                ReferencedContainer = "container:Pods.xcodeproj">

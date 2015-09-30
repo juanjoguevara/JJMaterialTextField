@@ -15,7 +15,6 @@
 
 -(void)showError;
 -(void)hideError;
--(void)clearButtonTintColor:(UIColor*)clearButtonTintColor;
 -(void)enableMaterialPlaceHolder:(BOOL)enable;
 
 @end

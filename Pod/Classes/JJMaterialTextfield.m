@@ -10,8 +10,7 @@
 @interface JJMaterialTextfield (){
     
     UIView *line;
-    UIButton *clearButton;
-    UILabel *movedPlaceHolderLabel;
+    UILabel *placeHolderLabel;
     BOOL enablePlaceHolder;
     NSAttributedString *_attString;
 
@@ -20,20 +19,27 @@
 @implementation JJMaterialTextfield
 @synthesize errorColor,lineColor;
 
-#define DEFAULT_ALPHA_LINE 0.6
+#define DEFAULT_ALPHA_LINE 0.8
+
+-(id)initWithFrame:(CGRect)frame{
+    
+    self=[super initWithFrame:frame];
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+-(void)awakeFromNib{
+   
+    [super awakeFromNib];
+    [self commonInit];
+    
+}
 
 -(void)commonInit{
     lineColor=[UIColor lightGrayColor];
     line=[[UIView alloc] init];
     line.backgroundColor=[lineColor colorWithAlphaComponent:DEFAULT_ALPHA_LINE];
-    self.clearButtonMode = UITextFieldViewModeWhileEditing;
-    clearButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [clearButton setImage:[[UIImage imageNamed:@"edit_button"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
-    
-    [clearButton setFrame:CGRectMake(0.0f, 0.0f, 15.0f, 15.0f)]; // Required for iOS7
-    [clearButton addTarget:self action:@selector(clearbuttonAction:) forControlEvents:UIControlEventTouchUpInside];
-    self.rightView = clearButton;
-    self.rightViewMode = UITextFieldViewModeWhileEditing;
     [self addSubview:line];
     self.clipsToBounds=NO;
     [self enableMaterialPlaceHolder:NO];
@@ -49,7 +55,7 @@
 
     if (enablePlaceHolder) {
         if (self.text.length>0) {
-            movedPlaceHolderLabel.alpha=1;
+            placeHolderLabel.alpha=1;
         }else{
             self.attributedPlaceholder=nil;
         }
@@ -62,28 +68,26 @@
                              
                              //animacion
                              if (self.text.length<=0) {
-                                 movedPlaceHolderLabel.transform=CGAffineTransformIdentity;
+                                 placeHolderLabel.transform=CGAffineTransformIdentity;
                              }else{
-                                 movedPlaceHolderLabel.transform=CGAffineTransformMakeTranslation(0, -movedPlaceHolderLabel.frame.size.height);
+                                 placeHolderLabel.transform=CGAffineTransformMakeTranslation(0, -placeHolderLabel.frame.size.height-3);
                              }
                          }
                          completion:^(BOOL finished) {
-                             self.attributedPlaceholder=movedPlaceHolderLabel.attributedText;
+                             self.attributedPlaceholder=placeHolderLabel.attributedText;
                              if (self.text.length<=0) {
-                                 movedPlaceHolderLabel.alpha=0;
+                                 placeHolderLabel.alpha=0;
                              }
                          }];
 
     }
-   }
--(void)clearButtonTintColor:(UIColor*)clearButtonTintColor{
-    
-    clearButton.tintColor=clearButtonTintColor;
 }
--(IBAction)clearbuttonAction:(id)sender{
+
+-(IBAction)clearAction:(id)sender{
     self.text=@"";
     [self textFieldDidChange:self];
 }
+
 -(void)highlight{
     
     [UIView animateWithDuration: 0.3 // duración
@@ -132,16 +136,15 @@
  
 }
 -(void)enableMaterialPlaceHolder:(BOOL)enable{
-    if (!movedPlaceHolderLabel) {
-          movedPlaceHolderLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 6, 0, self.frame.size.height)];
-         [self addSubview:movedPlaceHolderLabel];
+    if (!placeHolderLabel) {
+          placeHolderLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 6, 0, self.frame.size.height)];
+         [self addSubview:placeHolderLabel];
     }
     enablePlaceHolder=enable;
-    movedPlaceHolderLabel.alpha=0;
-    movedPlaceHolderLabel.attributedText=self.attributedPlaceholder;
-    [movedPlaceHolderLabel sizeToFit];
+    placeHolderLabel.alpha=0;
+    placeHolderLabel.attributedText=self.attributedPlaceholder;
+    [placeHolderLabel sizeToFit];
    
-    
 }
 
 - (BOOL)becomeFirstResponder
@@ -171,20 +174,6 @@
 
 -(void)hideError{
     line.backgroundColor=lineColor;
-}
-
--(id)initWithFrame:(CGRect)frame{
-    
-    self=[super initWithFrame:frame];
-    if (self) {
-        [self commonInit];
-    }
-    return self;
-}
--(void)awakeFromNib{
-    [super awakeFromNib];
-   [self commonInit];
-  
 }
 
 -(void)layoutSubviews{
