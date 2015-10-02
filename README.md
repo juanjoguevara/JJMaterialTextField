@@ -1,7 +1,7 @@
 # JJMaterialTextField
 
 A subclass of UITextfield based on Material Design
-
+[![License](https://img.shields.io/cocoapods/v/JJMaterialTextField.svg?style=flat)](http://cocoapods.org/pods/JJMaterialTextField)
 [![CI Status](http://img.shields.io/travis/Juanjo Guevara/JJMaterialTextField.svg?style=flat)](https://travis-ci.org/Juanjo Guevara/JJMaterialTextField)
 [![Version](https://img.shields.io/cocoapods/v/JJMaterialTextField.svg?style=flat)](http://cocoapods.org/pods/JJMaterialTextField)
 [![License](https://img.shields.io/cocoapods/l/JJMaterialTextField.svg?style=flat)](http://cocoapods.org/pods/JJMaterialTextField)
@@ -12,6 +12,9 @@ A subclass of UITextfield based on Material Design
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+iOS 7.0
+arc
 
 ## Installation
 
