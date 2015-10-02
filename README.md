@@ -2,7 +2,7 @@
 
 A subclass of UITextfield based on Material Design
 
-[![License](https://img.shields.io/cocoapods/v/JJMaterialTextField.svg?style=flat)](http://cocoapods.org/pods/JJMaterialTextField)
+[![License](https://img.shields.io/github/license/rockbarato/JJMaterialTextField.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![CI Status](http://img.shields.io/travis/Juanjo Guevara/JJMaterialTextField.svg?style=flat)](https://travis-ci.org/Juanjo Guevara/JJMaterialTextField)
 [![Version](https://img.shields.io/cocoapods/v/JJMaterialTextField.svg?style=flat)](http://cocoapods.org/pods/JJMaterialTextField)
 [![License](https://img.shields.io/cocoapods/l/JJMaterialTextField.svg?style=flat)](http://cocoapods.org/pods/JJMaterialTextField)
