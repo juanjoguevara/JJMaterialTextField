@@ -9,6 +9,6 @@
 @import UIKit;
 #import "JJMaterialTextField.h"
 
-@interface JJViewController : UIViewController
+@interface JJViewController : UIViewController <UITextFieldDelegate>
 
 @end

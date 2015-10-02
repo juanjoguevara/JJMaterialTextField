@@ -13,6 +13,7 @@
     UILabel *placeHolderLabel;
     BOOL enablePlaceHolder;
     NSAttributedString *_attString;
+    BOOL showError;
 
 }
 @end
@@ -38,6 +39,7 @@
 
 -(void)commonInit{
     lineColor=[UIColor lightGrayColor];
+    errorColor=[UIColor colorWithRed:0.910 green:0.329 blue:0.271 alpha:1.000]; // FLAT RED COLOR
     line=[[UIView alloc] init];
     line.backgroundColor=[lineColor colorWithAlphaComponent:DEFAULT_ALPHA_LINE];
     [self addSubview:line];
@@ -60,26 +62,34 @@
             self.attributedPlaceholder=nil;
         }
         
+        CGFloat duration=0.5;
+        CGFloat delay=0;
+        CGFloat damping=0.6;
+        CGFloat velocity=1;
         
-        [UIView animateWithDuration: 0.3 // duración
-                              delay: 0 // sin retardo antes de comenzar
-                            options: UIViewAnimationOptionCurveEaseInOut //opciones
-                         animations:^{
-                             
-                             //animacion
-                             if (self.text.length<=0) {
-                                 placeHolderLabel.transform=CGAffineTransformIdentity;
-                             }else{
-                                 placeHolderLabel.transform=CGAffineTransformMakeTranslation(0, -placeHolderLabel.frame.size.height-3);
-                             }
-                         }
+        [UIView animateWithDuration:duration
+                              delay:delay
+             usingSpringWithDamping:damping
+              initialSpringVelocity:velocity
+                            options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                                //Animations
+                                //animacion
+                                if (self.text.length<=0) {
+                                    placeHolderLabel.transform=CGAffineTransformIdentity;
+                                }else{
+                                    placeHolderLabel.transform=CGAffineTransformMakeTranslation(0, -placeHolderLabel.frame.size.height-3);
+                                }
+                            }
                          completion:^(BOOL finished) {
-                             self.attributedPlaceholder=placeHolderLabel.attributedText;
+                             //Completion Block
+                             
                              if (self.text.length<=0) {
                                  placeHolderLabel.alpha=0;
                              }
+                             self.attributedPlaceholder=_attString;
                          }];
 
+       
     }
 }
 
@@ -94,8 +104,10 @@
                           delay: 0 // sin retardo antes de comenzar
                         options: UIViewAnimationOptionCurveEaseInOut //opciones
                      animations:^{
-                         
-                        line.backgroundColor=lineColor;
+                         if (showError) {
+                             line.backgroundColor=errorColor;
+                         }else
+                             line.backgroundColor=lineColor;
                          
                      }
                      completion:^(BOOL finished) {
@@ -112,8 +124,10 @@
                           delay: 0 // sin retardo antes de comenzar
                         options: UIViewAnimationOptionCurveEaseInOut //opciones
                      animations:^{
-                         
-                         line.backgroundColor=[lineColor colorWithAlphaComponent:DEFAULT_ALPHA_LINE];
+                         if (showError) {
+                             line.backgroundColor=errorColor;
+                         }else
+                             line.backgroundColor=[lineColor colorWithAlphaComponent:DEFAULT_ALPHA_LINE];
 
                          
                      }
@@ -165,14 +179,12 @@
 }
 
 -(void)showError{
-    if (errorColor) {
-        line.backgroundColor=errorColor;
-    }else{
-        line.backgroundColor=[lineColor colorWithAlphaComponent:DEFAULT_ALPHA_LINE];
-    }
+    showError=YES;
+    line.backgroundColor=errorColor;
 }
 
 -(void)hideError{
+    showError=NO;
     line.backgroundColor=lineColor;
 }
 
