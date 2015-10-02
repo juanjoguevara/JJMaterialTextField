@@ -2,20 +2,18 @@
 
 A subclass of UITextfield based on Material Design
 
-[![CI Status](http://img.shields.io/travis/Juanjo Guevara/JJMaterialTextField.svg?style=flat)](https://travis-ci.org/Juanjo Guevara/JJMaterialTextField)
 [![Version](https://img.shields.io/cocoapods/v/JJMaterialTextField.svg?style=flat)](http://cocoapods.org/pods/JJMaterialTextField)
 [![License](https://img.shields.io/cocoapods/l/JJMaterialTextField.svg?style=flat)](http://cocoapods.org/pods/JJMaterialTextField)
 [![Platform](https://img.shields.io/cocoapods/p/JJMaterialTextField.svg?style=flat)](http://cocoapods.org/pods/JJMaterialTextField)
 
-## Usage
+## Example project
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
 
-iOS 7.0
-
-arc
+* ARC
+* iOS8
 
 ## Installation
 
@@ -24,6 +22,23 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "JJMaterialTextField"
+```
+
+## Usage
+
+```ObjectiveC
+
+#import "JJMaterialTextField.h"
+
+JJMaterialTextfield *textField =[[JJMaterialTextfield alloc] initWithFrame:CGRectMake(40, 120, self.view.frame.size.width-80, 34)];
+textField.textColor=[UIColor whiteColor];
+[textField enableMaterialPlaceHolder:YES];
+textField.errorColor=[UIColor colorWithRed:0.910 green:0.329 blue:0.271 alpha:1.000]; // FLAT RED COLOR
+textField.lineColor=[UIColor colorWithRed:0.482 green:0.800 blue:1.000 alpha:1.000];
+textField.tintColor=[UIColor colorWithRed:0.482 green:0.800 blue:1.000 alpha:1.000];
+textField.placeholder=@"Username";
+[self.view addSubview:textField];
+
 ```
 
 ## Author
