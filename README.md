@@ -1,6 +1,6 @@
 # JJMaterialTextField
 
-A subclass of UITextfield based on Material Design
+A subclass of UITextfield based on Material Design in Objective C
 
 [![Version](https://img.shields.io/cocoapods/v/JJMaterialTextField.svg?style=flat)](http://cocoapods.org/pods/JJMaterialTextField)
 [![License](https://img.shields.io/cocoapods/l/JJMaterialTextField.svg?style=flat)](http://cocoapods.org/pods/JJMaterialTextField)
@@ -26,10 +26,16 @@ pod "JJMaterialTextField"
 
 ## Usage
 
+**Import**
+
 ```ObjectiveC
 
 #import "JJMaterialTextField.h"
 
+```
+**Initialize textfield and configure**
+
+```ObjectiveC
 JJMaterialTextfield *textField =[[JJMaterialTextfield alloc] initWithFrame:CGRectMake(40, 120, self.view.frame.size.width-80, 34)];
 textField.textColor=[UIColor whiteColor];
 [textField enableMaterialPlaceHolder:YES];
