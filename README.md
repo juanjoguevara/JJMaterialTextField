@@ -2,7 +2,7 @@
 
 A subclass of UITextfield based on Material Design in Objective C
 
-![screenshot](http://i.imgur.com/cwMOGrK.jpg)
+![screenshot](http://i.imgur.com/cwMOGrK.jpg =250x)
 
 [![Version](https://img.shields.io/cocoapods/v/JJMaterialTextField.svg?style=flat)](http://cocoapods.org/pods/JJMaterialTextField)
 [![License](https://img.shields.io/cocoapods/l/JJMaterialTextField.svg?style=flat)](http://cocoapods.org/pods/JJMaterialTextField)
