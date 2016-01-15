@@ -77,15 +77,16 @@
                                 if (self.text.length<=0) {
                                     placeHolderLabel.transform=CGAffineTransformIdentity;
                                 }else{
-                                    placeHolderLabel.transform=CGAffineTransformMakeTranslation(0, -placeHolderLabel.frame.size.height-3);
+//                                    placeHolderLabel.transform=CGAffineTransformMakeTranslation(0, -placeHolderLabel.frame.size.height-3);
+                                    placeHolderLabel.transform=CGAffineTransformMakeTranslation(0, -placeHolderLabel.frame.size.height);
                                 }
                             }
                          completion:^(BOOL finished) {
                              //Completion Block
                              
-                             if (self.text.length<=0) {
-                                 placeHolderLabel.alpha=0;
-                             }
+//                             if (self.text.length<=0) {
+//                                 placeHolderLabel.alpha=0;
+//                             }
                              self.attributedPlaceholder=_attString;
                          }];
 
