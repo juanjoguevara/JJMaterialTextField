@@ -10,6 +10,8 @@
 
 @interface JJMaterialTextfield : UITextField
 
+//@property (nonatomic, assign) CGFloat placeholderFontSize;
+@property (nonatomic, strong) NSDictionary *placeholderAttributes;
 @property (nonatomic,strong) UIColor *errorColor;
 @property (nonatomic,strong) UIColor *lineColor;
 

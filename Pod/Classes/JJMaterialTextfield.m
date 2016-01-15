@@ -12,7 +12,7 @@
     UIView *line;
     UILabel *placeHolderLabel;
     BOOL enablePlaceHolder;
-    NSAttributedString *_attString;
+//    NSAttributedString *_attString;
     BOOL showError;
 
 }
@@ -77,9 +77,9 @@
                                 if (self.text.length<=0) {
                                     placeHolderLabel.transform=CGAffineTransformIdentity;
                                 }else{
-//                                    placeHolderLabel.transform=CGAffineTransformMakeTranslation(0, -placeHolderLabel.frame.size.height-3);
-                                    placeHolderLabel.transform=CGAffineTransformMakeTranslation(0, -placeHolderLabel.frame.size.height);
+                                    placeHolderLabel.transform=CGAffineTransformMakeTranslation(0, -placeHolderLabel.frame.size.height - 5);
                                 }
+                                
                             }
                          completion:^(BOOL finished) {
                              //Completion Block
@@ -87,7 +87,7 @@
 //                             if (self.text.length<=0) {
 //                                 placeHolderLabel.alpha=0;
 //                             }
-                             self.attributedPlaceholder=_attString;
+//                             self.attributedPlaceholder=_attString;
                          }];
 
        
@@ -141,14 +141,28 @@
 
   }
 
+- (void)setPlaceholderAttributes:(NSDictionary *)placeholderAttributes {
+    _placeholderAttributes = placeholderAttributes;
+    [self setPlaceholder:self.placeholder];
+}
+
+//-(void)setPlaceholderFontSize:(CGFloat)placeholderFontSize{
+//    _placeholderFontSize = placeholderFontSize;
+//    [self setPlaceholder:self.placeholder];
+//}
+
 -(void)setPlaceholder:(NSString *)placeholder{
     [super setPlaceholder:placeholder];
-    self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeholder attributes:@{NSForegroundColorAttributeName: [self.textColor colorWithAlphaComponent:0.5],
-                                                                                                     NSFontAttributeName : [self.font fontWithSize:self.font.pointSize * 1.3]}];
+    NSDictionary *atts = @{NSForegroundColorAttributeName: [self.textColor colorWithAlphaComponent:0.8],
+                           NSFontAttributeName : [self.font fontWithSize: self.font.pointSize]};
+//                           NSFontAttributeName : [self.font fontWithSize: self.placeholderFontSize ?: self.font.pointSize]};
+                           
+    self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeholder attributes: self.placeholderAttributes ?: atts];
+
     [self enableMaterialPlaceHolder:enablePlaceHolder];
-    if (_attString.length==0) {
-           _attString=self.attributedPlaceholder;
-    }
+//    if (_attString.length==0) {
+//           _attString=self.attributedPlaceholder;
+//    }
  
 }
 -(void)enableMaterialPlaceHolder:(BOOL)enable{

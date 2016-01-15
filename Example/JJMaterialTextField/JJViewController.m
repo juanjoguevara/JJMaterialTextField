@@ -45,6 +45,11 @@
     passTextField.secureTextEntry=YES;
     passTextField.returnKeyType=UIReturnKeyDone;
     passTextField.tag=2;
+    passTextField.font = [UIFont systemFontOfSize:15];
+    passTextField.textColor = [UIColor whiteColor];
+    passTextField.placeholderAttributes = @{NSFontAttributeName : [UIFont systemFontOfSize:20],
+                                            NSForegroundColorAttributeName : [[UIColor grayColor] colorWithAlphaComponent:.8]};
+//    passTextField.placeholderFontSize = 20;
     [self.view addSubview:passTextField];
     
     UIButton *button=[[UIButton alloc] initWithFrame:CGRectMake(40, 300, self.view.frame.size.width-80, 60)];
