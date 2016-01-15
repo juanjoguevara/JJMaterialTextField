@@ -20,7 +20,7 @@
 
 #define DEFAULT_ALPHA_LINE 0.8
 
--(id)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -29,14 +29,14 @@
     return self;
 }
 
--(void)awakeFromNib
+- (void)awakeFromNib
 {
     [super awakeFromNib];
     [self commonInit];
     
 }
 
--(void)commonInit
+- (void)commonInit
 {
     lineColor = [UIColor lightGrayColor];
     errorColor = [UIColor colorWithRed:0.910 green:0.329 blue:0.271 alpha:1.000]; // FLAT RED COLOR
@@ -51,13 +51,13 @@
     
 }
 
--(void)setText:(NSString *)text
+- (void)setText:(NSString *)text
 {
     [super setText:text];
     [self textFieldDidChange:self];
 }
 
--(IBAction)textFieldDidChange:(id)sender
+- (IBAction)textFieldDidChange:(id)sender
 {
     if (self.enableMaterialPlaceHolder) {
         
