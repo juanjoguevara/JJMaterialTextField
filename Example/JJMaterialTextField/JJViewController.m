@@ -9,7 +9,7 @@
 #import "JJViewController.h"
 
 @interface JJViewController ()
-@property (nonatomic, strong) JJMaterialTextfield *passwordTextField;
+
 @end
 
 @implementation JJViewController
@@ -49,20 +49,13 @@
     passTextField.textColor = [UIColor whiteColor];
     passTextField.placeholderAttributes = @{NSFontAttributeName : [UIFont systemFontOfSize:20],
                                             NSForegroundColorAttributeName : [[UIColor grayColor] colorWithAlphaComponent:.8]};
-//    passTextField.placeholderFontSize = 20;
     [self.view addSubview:passTextField];
     
     UIButton *button=[[UIButton alloc] initWithFrame:CGRectMake(40, 300, self.view.frame.size.width-80, 60)];
     [button setTitle:@"Submit" forState:UIControlStateNormal];
     [button setBackgroundColor:[UIColor colorWithRed:0.482 green:0.800 blue:1.000 alpha:1.000]];
     [self.view addSubview:button];
-    [button addTarget:self action:@selector(submit) forControlEvents:UIControlEventTouchUpInside];
 
-}
-
-- (void)submit
-{
-    [self.passwordTextField showError];
 }
 
 
