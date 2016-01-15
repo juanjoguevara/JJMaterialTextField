@@ -143,7 +143,8 @@
 
 -(void)setPlaceholder:(NSString *)placeholder{
     [super setPlaceholder:placeholder];
-    self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeholder attributes:@{NSForegroundColorAttributeName: [self.textColor colorWithAlphaComponent:0.5]}];
+    self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeholder attributes:@{NSForegroundColorAttributeName: [self.textColor colorWithAlphaComponent:0.5],
+                                                                                                     NSFontAttributeName : [self.font fontWithSize:self.font.pointSize * 1.3]}];
     [self enableMaterialPlaceHolder:enablePlaceHolder];
     if (_attString.length==0) {
            _attString=self.attributedPlaceholder;

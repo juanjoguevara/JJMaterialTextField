@@ -9,7 +9,7 @@
 #import "JJViewController.h"
 
 @interface JJViewController ()
-
+@property (nonatomic, strong) JJMaterialTextfield *passwordTextField;
 @end
 
 @implementation JJViewController
@@ -51,10 +51,15 @@
     [button setTitle:@"Submit" forState:UIControlStateNormal];
     [button setBackgroundColor:[UIColor colorWithRed:0.482 green:0.800 blue:1.000 alpha:1.000]];
     [self.view addSubview:button];
-    
-    
-	// Do any additional setup after loading the view, typically from a nib.
+    [button addTarget:self action:@selector(submit) forControlEvents:UIControlEventTouchUpInside];
+
 }
+
+- (void)submit
+{
+    [self.passwordTextField showError];
+}
+
 
 -(void)textFieldDidEndEditing:(JJMaterialTextfield *)textField{
     if (textField.text.length==0) {
