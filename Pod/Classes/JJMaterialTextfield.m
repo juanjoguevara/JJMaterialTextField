@@ -8,11 +8,9 @@
 
 #import "JJMaterialTextfield.h"
 @interface JJMaterialTextfield (){
-    
     UIView *line;
     UILabel *placeHolderLabel;
     BOOL enablePlaceHolder;
-//    NSAttributedString *_attString;
     BOOL showError;
 
 }
@@ -83,11 +81,6 @@
                             }
                          completion:^(BOOL finished) {
                              //Completion Block
-                             
-//                             if (self.text.length<=0) {
-//                                 placeHolderLabel.alpha=0;
-//                             }
-//                             self.attributedPlaceholder=_attString;
                          }];
 
        
@@ -146,25 +139,17 @@
     [self setPlaceholder:self.placeholder];
 }
 
-//-(void)setPlaceholderFontSize:(CGFloat)placeholderFontSize{
-//    _placeholderFontSize = placeholderFontSize;
-//    [self setPlaceholder:self.placeholder];
-//}
 
 -(void)setPlaceholder:(NSString *)placeholder{
     [super setPlaceholder:placeholder];
     NSDictionary *atts = @{NSForegroundColorAttributeName: [self.textColor colorWithAlphaComponent:0.8],
                            NSFontAttributeName : [self.font fontWithSize: self.font.pointSize]};
-//                           NSFontAttributeName : [self.font fontWithSize: self.placeholderFontSize ?: self.font.pointSize]};
-                           
+    
     self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeholder attributes: self.placeholderAttributes ?: atts];
 
     [self enableMaterialPlaceHolder:enablePlaceHolder];
-//    if (_attString.length==0) {
-//           _attString=self.attributedPlaceholder;
-//    }
- 
 }
+
 -(void)enableMaterialPlaceHolder:(BOOL)enable{
     if (!placeHolderLabel) {
           placeHolderLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 6, 0, self.frame.size.height)];
