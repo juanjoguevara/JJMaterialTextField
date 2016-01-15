@@ -16,6 +16,9 @@
 
 -(void)showError;
 -(void)hideError;
--(void)enableMaterialPlaceHolder:(BOOL)enable;
+//-(void)enableMaterialPlaceHolder:(BOOL)enable;
+
+@property (nonatomic) IBInspectable BOOL enableMaterialPlaceHolder;
+
 
 @end
