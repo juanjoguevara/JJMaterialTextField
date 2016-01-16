@@ -44,9 +44,7 @@
     line.backgroundColor = [lineColor colorWithAlphaComponent:DEFAULT_ALPHA_LINE];
     [self addSubview:line];
     self.clipsToBounds = NO;
-    [self setEnableMaterialPlaceHolder:YES];
-//    [self enableMaterialPlaceHolder:NO];
-//    self.enableMaterialPlaceHolder = YES;
+    [self setEnableMaterialPlaceHolder:self.enableMaterialPlaceHolder];
     [self addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     
 }
