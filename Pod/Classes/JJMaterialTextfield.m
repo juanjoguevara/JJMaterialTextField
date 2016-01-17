@@ -8,13 +8,14 @@
 
 #import "JJMaterialTextfield.h"
 
-@interface JJMaterialTextfield (){
+@interface JJMaterialTextfield ()
+{
     UIView *line;
     UILabel *placeHolderLabel;
     BOOL showError;
 }
-
 @end
+
 @implementation JJMaterialTextfield
 @synthesize errorColor,lineColor;
 
@@ -171,7 +172,7 @@
     _enableMaterialPlaceHolder = enableMaterialPlaceHolder;
     
     if (!placeHolderLabel) {
-        placeHolderLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 6, 0, self.frame.size.height)];
+        placeHolderLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 6, 0, self.frame.size.height)];
         [self addSubview:placeHolderLabel];
     }
     placeHolderLabel.alpha = 0;
@@ -179,18 +180,6 @@
     [placeHolderLabel sizeToFit];
     
 }
-
-//-(void)enableMaterialPlaceHolder:(BOOL)enable{
-//    if (!placeHolderLabel) {
-//          placeHolderLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 6, 0, self.frame.size.height)];
-//         [self addSubview:placeHolderLabel];
-//    }
-//    enablePlaceHolder=enable;
-//    placeHolderLabel.alpha=0;
-//    placeHolderLabel.attributedText=self.attributedPlaceholder;
-//    [placeHolderLabel sizeToFit];
-//   
-//}
 
 - (BOOL)becomeFirstResponder
 {
@@ -201,7 +190,7 @@
     return returnValue;
 }
 
--(BOOL)resignFirstResponder
+- (BOOL)resignFirstResponder
 {
     BOOL returnValue = [super resignFirstResponder];
    
@@ -210,19 +199,22 @@
     return returnValue;
 }
 
--(void)showError{
-    showError=YES;
-    line.backgroundColor=errorColor;
+- (void)showError
+{
+    showError = YES;
+    line.backgroundColor = errorColor;
 }
 
--(void)hideError{
-    showError=NO;
-    line.backgroundColor=lineColor;
+- (void)hideError
+{
+    showError = NO;
+    line.backgroundColor = lineColor;
 }
 
--(void)layoutSubviews{
+- (void)layoutSubviews
+{
     [super layoutSubviews];
-    line.frame=CGRectMake(0, self.frame.size.height-1, self.frame.size.width, 1);
+    line.frame = CGRectMake(0, self.frame.size.height-1, self.frame.size.width, 1);
 }
 
 @end
