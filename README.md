@@ -51,6 +51,14 @@ textField.placeholder=@"Username";
 
 ```
 
+**Use placeholder Attributes**
+```ObjectiveC
+
+  textField.placeholderAttributes = @{NSFontAttributeName : [UIFont systemFontOfSize:20],
+                                            NSForegroundColorAttributeName : [[UIColor grayColor] colorWithAlphaComponent:.8]};
+                                            
+ ```
+
 ## Author
 
 Juanjo Guevara, juanjoguevara@gmail.com
