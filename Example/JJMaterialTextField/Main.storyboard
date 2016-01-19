@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Eau-Uc-ybm">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -29,9 +30,68 @@
                             <constraint firstItem="9JP-7i-bz8" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="tPb-km-EjY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="wsy-gC-wSs"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="uWg-1V-SUj" kind="show" identifier="ShowNext" id="cTG-Qo-BS8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="433"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0XR-De-5Q8">
+            <objects>
+                <viewController id="uWg-1V-SUj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="reo-2e-iXm"/>
+                        <viewControllerLayoutGuide type="bottom" id="coO-99-Qvg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ELb-kz-Fz7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="text here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="49L-6e-bdA" customClass="JJMaterialTextfield">
+                                <rect key="frame" x="36" y="269" width="248" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FbE-hd-Ig3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableMaterialPlaceHolder" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="49L-6e-bdA" firstAttribute="centerY" secondItem="ELb-kz-Fz7" secondAttribute="centerY" id="OTd-GG-Aof"/>
+                            <constraint firstItem="49L-6e-bdA" firstAttribute="centerX" secondItem="ELb-kz-Fz7" secondAttribute="centerX" id="QQ7-Yk-ifH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="49L-6e-bdA" secondAttribute="trailing" constant="20" id="cB6-Mu-LxC"/>
+                            <constraint firstItem="49L-6e-bdA" firstAttribute="leading" secondItem="ELb-kz-Fz7" secondAttribute="leadingMargin" constant="20" id="koa-fw-RYU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETd-Fl-D8s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462" y="433"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7ZI-KI-SRS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Eau-Uc-ybm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="crO-Rz-Pmf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="whP-gf-Uak" kind="relationship" relationship="rootViewController" id="F8r-gy-sTc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1s5-NH-pkc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="433"/>
         </scene>

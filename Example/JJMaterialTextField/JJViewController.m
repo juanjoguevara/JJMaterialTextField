@@ -9,7 +9,7 @@
 #import "JJViewController.h"
 
 @interface JJViewController ()
-
+@property (nonatomic, strong) JJMaterialTextfield *passwordTextfield;
 @end
 
 @implementation JJViewController
@@ -22,7 +22,8 @@
     
     JJMaterialTextfield *userNameTextfield =[[JJMaterialTextfield alloc] initWithFrame:CGRectMake(40, 120, self.view.frame.size.width-80, 34)];
     userNameTextfield.textColor=[UIColor whiteColor];
-    [userNameTextfield enableMaterialPlaceHolder:YES];
+//    [userNameTextfield enableMaterialPlaceHolder:YES];
+    userNameTextfield.enableMaterialPlaceHolder = YES;
     userNameTextfield.errorColor=[UIColor colorWithRed:0.910 green:0.329 blue:0.271 alpha:1.000]; // FLAT RED COLOR
     userNameTextfield.lineColor=[UIColor colorWithRed:0.482 green:0.800 blue:1.000 alpha:1.000];
     userNameTextfield.tintColor=[UIColor colorWithRed:0.482 green:0.800 blue:1.000 alpha:1.000];
@@ -35,7 +36,8 @@
     JJMaterialTextfield *passTextField =[[JJMaterialTextfield alloc] initWithFrame:CGRectMake(40, 200, self.view.frame.size.width-80, 34)];
     passTextField.textColor=[UIColor whiteColor];
 
-    [passTextField enableMaterialPlaceHolder:YES];
+//    [passTextField enableMaterialPlaceHolder:YES];
+    passTextField.enableMaterialPlaceHolder = YES;
     
     passTextField.errorColor=[UIColor colorWithRed:0.910 green:0.329 blue:0.271 alpha:1.000]; // FLAT RED COLOR
     passTextField.lineColor=[UIColor colorWithRed:0.482 green:0.800 blue:1.000 alpha:1.000];
@@ -45,16 +47,46 @@
     passTextField.secureTextEntry=YES;
     passTextField.returnKeyType=UIReturnKeyDone;
     passTextField.tag=2;
+    passTextField.font = [UIFont systemFontOfSize:15];
+    passTextField.textColor = [UIColor whiteColor];
+    passTextField.placeholderAttributes = @{NSFontAttributeName : [UIFont systemFontOfSize:20],
+                                            NSForegroundColorAttributeName : [[UIColor grayColor] colorWithAlphaComponent:.8]};
     [self.view addSubview:passTextField];
+    self.passwordTextfield = passTextField;
     
     UIButton *button=[[UIButton alloc] initWithFrame:CGRectMake(40, 300, self.view.frame.size.width-80, 60)];
     [button setTitle:@"Submit" forState:UIControlStateNormal];
     [button setBackgroundColor:[UIColor colorWithRed:0.482 green:0.800 blue:1.000 alpha:1.000]];
     [self.view addSubview:button];
-    
-    
-	// Do any additional setup after loading the view, typically from a nib.
+
+    [button addTarget:self action:@selector(submit) forControlEvents:UIControlEventTouchUpInside];
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self updateUI];
+}
+
+- (void)updateUI
+{
+    self.passwordTextfield.text = nil; 
+}
+
+- (void)submit
+{
+//    UIViewController *vc = [[UIViewController alloc] init];
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+//    vc.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismiss)];
+//    [self presentViewController:nav animated:YES completion:nil];
+    [self performSegueWithIdentifier:@"ShowNext" sender:self];
+}
+
+//- (void)dismiss
+//{
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//}
 
 -(void)textFieldDidEndEditing:(JJMaterialTextfield *)textField{
     if (textField.text.length==0) {
