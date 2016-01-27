@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Eau-Uc-ybm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Eau-Uc-ybm">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--JJMaterialTextfield-->
         <scene sceneID="wQg-tq-qST">
             <objects>
                 <viewController id="whP-gf-Uak" customClass="JJViewController" sceneMemberID="viewController">
@@ -30,7 +30,9 @@
                             <constraint firstItem="9JP-7i-bz8" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="tPb-km-EjY"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="wsy-gC-wSs"/>
+                    <navigationItem key="navigationItem" title="JJMaterialTextfield" id="wsy-gC-wSs">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="BEi-1B-SZ4"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <segue destination="uWg-1V-SUj" kind="show" identifier="ShowNext" id="cTG-Qo-BS8"/>
@@ -40,7 +42,7 @@
             </objects>
             <point key="canvasLocation" x="929" y="433"/>
         </scene>
-        <!--View Controller-->
+        <!--JJMaterialTextfield-->
         <scene sceneID="0XR-De-5Q8">
             <objects>
                 <viewController id="uWg-1V-SUj" sceneMemberID="viewController">
@@ -72,6 +74,7 @@
                             <constraint firstItem="49L-6e-bdA" firstAttribute="leading" secondItem="ELb-kz-Fz7" secondAttribute="leadingMargin" constant="20" id="koa-fw-RYU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="JJMaterialTextfield" id="a86-uZ-IKl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ETd-Fl-D8s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,9 +85,15 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Eau-Uc-ybm" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="crO-Rz-Pmf">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="crO-Rz-Pmf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.98805424550395338" green="1" blue="0.9776913616321552" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.69019609689999994" blue="0.94117647410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

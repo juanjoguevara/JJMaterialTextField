@@ -18,11 +18,12 @@
 {
     [super viewDidLoad];
     
-    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    JJMaterialTextfield *userNameTextfield =[[JJMaterialTextfield alloc] initWithFrame:CGRectMake(40, 120, self.view.frame.size.width-80, 34)];
+    JJMaterialTextfield *userNameTextfield =[[JJMaterialTextfield alloc] initWithFrame:CGRectMake(40, 150, self.view.frame.size.width-80, 34)];
     userNameTextfield.textColor=[UIColor whiteColor];
-//    [userNameTextfield enableMaterialPlaceHolder:YES];
+
     userNameTextfield.enableMaterialPlaceHolder = YES;
     userNameTextfield.errorColor=[UIColor colorWithRed:0.910 green:0.329 blue:0.271 alpha:1.000]; // FLAT RED COLOR
     userNameTextfield.lineColor=[UIColor colorWithRed:0.482 green:0.800 blue:1.000 alpha:1.000];
@@ -33,12 +34,10 @@
     userNameTextfield.tag=1;
     [self.view addSubview:userNameTextfield];
     
-    JJMaterialTextfield *passTextField =[[JJMaterialTextfield alloc] initWithFrame:CGRectMake(40, 200, self.view.frame.size.width-80, 34)];
+    JJMaterialTextfield *passTextField =[[JJMaterialTextfield alloc] initWithFrame:CGRectMake(40, 220, self.view.frame.size.width-80, 34)];
     passTextField.textColor=[UIColor whiteColor];
 
-//    [passTextField enableMaterialPlaceHolder:YES];
     passTextField.enableMaterialPlaceHolder = YES;
-    
     passTextField.errorColor=[UIColor colorWithRed:0.910 green:0.329 blue:0.271 alpha:1.000]; // FLAT RED COLOR
     passTextField.lineColor=[UIColor colorWithRed:0.482 green:0.800 blue:1.000 alpha:1.000];
     passTextField.tintColor=[UIColor colorWithRed:0.482 green:0.800 blue:1.000 alpha:1.000];
@@ -50,7 +49,7 @@
     passTextField.font = [UIFont systemFontOfSize:15];
     passTextField.textColor = [UIColor whiteColor];
     passTextField.placeholderAttributes = @{NSFontAttributeName : [UIFont systemFontOfSize:20],
-                                            NSForegroundColorAttributeName : [[UIColor grayColor] colorWithAlphaComponent:.8]};
+                                            NSForegroundColorAttributeName : [[UIColor lightTextColor] colorWithAlphaComponent:.8]};
     [self.view addSubview:passTextField];
     self.passwordTextfield = passTextField;
     
