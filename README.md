@@ -7,7 +7,7 @@ A subclass of UITextfield based on Material Design in Objective C
 [![Platform](https://img.shields.io/cocoapods/p/JJMaterialTextField.svg?style=flat)](http://cocoapods.org/pods/JJMaterialTextField)
 
 ![screenshot](http://imgur.com/dQVlPlu.jpg)
-
+[Show Appetize.io DEMO](https://appetize.io/app/4pxj983yx74p19duwf249xpguw?device=iphone5s&scale=75&orientation=portrait&osVersion=9.2)
 ## Example project
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
