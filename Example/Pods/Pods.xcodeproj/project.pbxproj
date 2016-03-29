@@ -11,14 +11,14 @@
 		0BB21E30DD726A6AC558B56132EB5867 /* Pods-JJMaterialTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AEC46B97F6475B858731B6E25F35BEF /* Pods-JJMaterialTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		285A3B04AE503A5DA27E522EE23C8A82 /* JJMaterialTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2877988D207AC560472785E83F5D84E7 /* JJMaterialTextField-dummy.m */; };
 		31A51CE4174D5B7F7B92CEAA405700CB /* Pods-JJMaterialTextField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E63FD69F8F78F5624E800975217089F1 /* Pods-JJMaterialTextField_Tests-dummy.m */; };
-		494159C765F432319E290E239B2073AE /* JJMaterialTextfield.h in Headers */ = {isa = PBXBuildFile; fileRef = FCB537F9C90FBA4DA80B1B78C6B0F70D /* JJMaterialTextfield.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6207616D1CAB1971007C5E24 /* JJMaterialTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 6207616B1CAB1971007C5E24 /* JJMaterialTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6207616E1CAB1971007C5E24 /* JJMaterialTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6207616C1CAB1971007C5E24 /* JJMaterialTextField.m */; };
 		63C959249BE3DB6D428022AE1F8F10BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CE7BFA0BA136FA3D12275962FFE408 /* Foundation.framework */; };
 		81AE9C05491EAD6E8784D239B4374C5B /* Pods-JJMaterialTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F5562774857923E6136541A5EC4EE5 /* Pods-JJMaterialTextField_Example-dummy.m */; };
 		96F88C606D7D3DB27BD23FE7B297A4D7 /* JJMaterialTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C271EF9E5F1A5211F8F0A078D46E5FF2 /* JJMaterialTextField.bundle */; };
 		9E57E797C414C1F3B2F0F069B1AEAFE4 /* Pods-JJMaterialTextField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B25B36202FEFEE452A75BAA9E0604F76 /* Pods-JJMaterialTextField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E7837BC57235A49DB53100FA9CF8C79 /* JJMaterialTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F50A9363403DA896E9A14C1B5FC1589F /* JJMaterialTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C04A2D4C9B457B1B05FEB51E1EA1852D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CE7BFA0BA136FA3D12275962FFE408 /* Foundation.framework */; };
-		CC819E30542A3C0051B0D65AE4813B5F /* JJMaterialTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A9A648A6D3EA208626C9720E8287F3 /* JJMaterialTextfield.m */; };
 		D082CEC7EC021079DA4259D3E8511B50 /* edit_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 597F24F860011841C5851FB497609FF4 /* edit_button.png */; };
 /* End PBXBuildFile section */
 
@@ -57,11 +57,12 @@
 		21AB2DAF772D7BEAF08FD3C52748A2CD /* Pods-JJMaterialTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JJMaterialTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2877988D207AC560472785E83F5D84E7 /* JJMaterialTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JJMaterialTextField-dummy.m"; sourceTree = "<group>"; };
 		2BC285DE3FA4412C45A965D6855C5E76 /* Pods-JJMaterialTextField_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JJMaterialTextField_Example-resources.sh"; sourceTree = "<group>"; };
-		42A9A648A6D3EA208626C9720E8287F3 /* JJMaterialTextfield.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JJMaterialTextfield.m; sourceTree = "<group>"; };
 		4F9FBDD30F0048C54D8B8E0A59BBE870 /* Pods-JJMaterialTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JJMaterialTextField_Example.modulemap"; sourceTree = "<group>"; };
 		50E21DA3B27D17467CF0928479C77D6C /* Pods-JJMaterialTextField_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JJMaterialTextField_Example-frameworks.sh"; sourceTree = "<group>"; };
 		5815E37E086D8BADCDFDCF306D4D7ED8 /* JJMaterialTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JJMaterialTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		597F24F860011841C5851FB497609FF4 /* edit_button.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = edit_button.png; sourceTree = "<group>"; };
+		6207616B1CAB1971007C5E24 /* JJMaterialTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJMaterialTextField.h; sourceTree = "<group>"; };
+		6207616C1CAB1971007C5E24 /* JJMaterialTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJMaterialTextField.m; sourceTree = "<group>"; };
 		80BD433EC2F25205C7BD8D61241847BE /* Pods-JJMaterialTextField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JJMaterialTextField_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		85AD0CEBBD46A6AE91F81D1487B3AD14 /* Pods_JJMaterialTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJMaterialTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		864E3C292FF6CBB3DB872CB7E047478F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,7 +83,6 @@
 		F5F4D1BED7E2894D21F2052827D01B98 /* JJMaterialTextField-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "JJMaterialTextField-Private.xcconfig"; sourceTree = "<group>"; };
 		F61C301E2D477BA9F07008B29DF98D97 /* Pods-JJMaterialTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JJMaterialTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FB148FDB2B994B2ACC5FA949BB246E9F /* JJMaterialTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JJMaterialTextField.xcconfig; sourceTree = "<group>"; };
-		FCB537F9C90FBA4DA80B1B78C6B0F70D /* JJMaterialTextfield.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JJMaterialTextfield.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,8 +188,8 @@
 		5A2A4CD709921CA7020952D39E2AB6D0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FCB537F9C90FBA4DA80B1B78C6B0F70D /* JJMaterialTextfield.h */,
-				42A9A648A6D3EA208626C9720E8287F3 /* JJMaterialTextfield.m */,
+				6207616B1CAB1971007C5E24 /* JJMaterialTextField.h */,
+				6207616C1CAB1971007C5E24 /* JJMaterialTextField.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -286,7 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E7837BC57235A49DB53100FA9CF8C79 /* JJMaterialTextField-umbrella.h in Headers */,
-				494159C765F432319E290E239B2073AE /* JJMaterialTextfield.h in Headers */,
+				6207616D1CAB1971007C5E24 /* JJMaterialTextField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,8 +434,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6207616E1CAB1971007C5E24 /* JJMaterialTextField.m in Sources */,
 				285A3B04AE503A5DA27E522EE23C8A82 /* JJMaterialTextField-dummy.m in Sources */,
-				CC819E30542A3C0051B0D65AE4813B5F /* JJMaterialTextfield.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

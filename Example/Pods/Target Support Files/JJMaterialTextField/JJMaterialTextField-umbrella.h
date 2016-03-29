@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-#import "JJMaterialTextfield.h"
+#import "JJMaterialTextField.h"
 
 FOUNDATION_EXPORT double JJMaterialTextFieldVersionNumber;
 FOUNDATION_EXPORT const unsigned char JJMaterialTextFieldVersionString[];
