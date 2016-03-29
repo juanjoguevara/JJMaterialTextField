@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JJMaterialTextfield : UITextField
+@interface JJMaterialTextField : UITextField
 
 /**
  *  Attributes that are optionally applied to the placeholder text. Use this to style the placeholder differently than the regular text. Default is nil (meaning no additional styling will be applied to the placeholder. If nil, the placeholder will be styled the same as the textfield except its color will be a 0.8 alpha version of the textfield text color.

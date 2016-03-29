@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Juanjo Guevara. All rights reserved.
 //
 
-#import "JJMaterialTextfield.h"
+#import "JJMaterialTextField.h"
 
-@interface JJMaterialTextfield ()
+@interface JJMaterialTextField ()
 {
     UIView *line;
     UILabel *placeHolderLabel;
@@ -16,7 +16,7 @@
 }
 @end
 
-@implementation JJMaterialTextfield
+@implementation JJMaterialTextField
 @synthesize errorColor,lineColor;
 
 #define DEFAULT_ALPHA_LINE 0.8
