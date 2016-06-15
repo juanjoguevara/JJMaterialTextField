@@ -45,7 +45,7 @@
     line.backgroundColor = [lineColor colorWithAlphaComponent:DEFAULT_ALPHA_LINE];
     [self addSubview:line];
     self.clipsToBounds = NO;
-    [self setEnableMaterialPlaceHolder:self.enableMaterialPlaceHolder];
+    [self setEnableMaterialPlaceHolder:YES];
     [self addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     
 }
@@ -64,9 +64,6 @@
             placeHolderLabel.alpha = 1;
             self.attributedPlaceholder = nil;
         }
-//        else {
-//            self.attributedPlaceholder = nil;
-//        }
         
         CGFloat duration = 0.5;
         CGFloat delay = 0;
@@ -175,7 +172,7 @@
         placeHolderLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 6, 0, self.frame.size.height)];
         [self addSubview:placeHolderLabel];
     }
-    placeHolderLabel.alpha = 0;
+    placeHolderLabel.alpha = _enableMaterialPlaceHolder ? placeHolderLabel.alpha : 0;
     placeHolderLabel.attributedText = self.attributedPlaceholder;
     [placeHolderLabel sizeToFit];
     
