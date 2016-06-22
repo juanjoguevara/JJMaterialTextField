@@ -17,7 +17,7 @@
 @end
 
 @implementation JJMaterialTextfield
-@synthesize errorColor,lineColor;
+@synthesize errorColor;
 
 #define DEFAULT_ALPHA_LINE 0.8
 
@@ -39,10 +39,10 @@
 
 - (void)commonInit
 {
-    lineColor = [UIColor lightGrayColor];
+    _lineColor = [UIColor lightGrayColor];
     errorColor = [UIColor colorWithRed:0.910 green:0.329 blue:0.271 alpha:1.000]; // FLAT RED COLOR
     line = [[UIView alloc] init];
-    line.backgroundColor = [lineColor colorWithAlphaComponent:DEFAULT_ALPHA_LINE];
+    line.backgroundColor = [_lineColor colorWithAlphaComponent:DEFAULT_ALPHA_LINE];
     [self addSubview:line];
     self.clipsToBounds = NO;
     [self setEnableMaterialPlaceHolder:YES];
@@ -54,6 +54,12 @@
 {
     [super setText:text];
     [self textFieldDidChange:self];
+}
+
+- (void)setLineColor:(UIColor *)lineColor
+{
+    _lineColor = lineColor;
+    line.backgroundColor = _lineColor;
 }
 
 - (IBAction)textFieldDidChange:(id)sender
@@ -109,7 +115,7 @@
                              line.backgroundColor=errorColor;
                          }
                          else {
-                             line.backgroundColor=lineColor;
+                             line.backgroundColor=self.lineColor;
                          }
                          
                      }
@@ -133,7 +139,7 @@
                              line.backgroundColor = errorColor;
                          }
                          else {
-                             line.backgroundColor = [lineColor colorWithAlphaComponent:DEFAULT_ALPHA_LINE];
+                             line.backgroundColor = [self.lineColor colorWithAlphaComponent:DEFAULT_ALPHA_LINE];
                          }
 
                          
@@ -205,7 +211,7 @@
 - (void)hideError
 {
     showError = NO;
-    line.backgroundColor = lineColor;
+    line.backgroundColor = self.lineColor;
 }
 
 - (void)layoutSubviews
